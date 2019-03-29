@@ -1,11 +1,6 @@
 $(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
-    // var qOne = parseInt($("#qOne").val());
-    // var qTwo = parseInt($("#qTwo").val());
-    // var qThree = parseInt($("#qThree").val());
-    // var qFour = parseInt($("#qFour").val());
-    // var qFive = parseInt($("#qFive").val());
 
     var qOne = $("input:radio[name=qOne]:checked").val();
     var qTwo = $("input:radio[name=qTwo]:checked").val();
@@ -34,9 +29,6 @@ $(function() {
       $("#optPD").hide();
       $("#optJA").hide();
 
-      };
-
-
-
-});
+    };
   });
+});
