@@ -14,8 +14,46 @@
   display: none;
 }
 
+h1 {
+font-family: 'Text Me One', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  display: stretch;
+}
 
+ul.header {
+  display: inline;
+  list-style: none;
+}
 
+li.topbar {
+  display: inline;
+  margin-left: -5px;
+}
+
+#mainpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+
+}
+#about {
+  font-size: 20px;
+}
+
+footer {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
 
 font-family: 'Numans', sans-serif;
 font-family: 'Text Me One', sans-serif;
