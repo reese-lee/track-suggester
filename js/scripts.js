@@ -5,7 +5,7 @@ $(document).ready(function () {
     var track2 = $("input:radio[name=qTwo]:checked").val();
     var track3 = $("input:radio[name=qThree]:checked").val();
 
-    
+    if(qOne === )
 
 
 
