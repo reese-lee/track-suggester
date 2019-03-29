@@ -1,6 +1,5 @@
 # _Track Suggester_
 
-####( link )[link]
 
 #### _This is a page that recommends tracks to users based on their answers. March 29, 2019._
 
@@ -12,7 +11,8 @@ This is a track Suggester webpage (using HTML, CSS, JavaScript and jQuery) that 
 
 ## Setup/Installation Requirements
 
-1. Click on link above to access the page directly.
+1. Clone Track-Suggester repository at https://github.com/reese-lee/track-suggester
+2. Open index.html in browser
 
 
 ## Technologies Used
