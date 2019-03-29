@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <h1>So You Want to Become a Coder?</h1>
-      <p>There are many programming languages out there. Here at Prologue Coding School, we offer some of the most popular tracks to get you going on your coding journey. Let us help you find the right one for you!</p>
+      <p>There are many programming languages out there. How do you choose where to begin? Here at Prologue Coding School, we offer some of the most popular tracks to get you going on your coding journey. Let us help you find the right one for you!</p>
       <br>
       <div class="navigator">
         <h3>Where to First?</h3>
@@ -25,69 +25,56 @@
       <div class="survey">
       <h2>Which track is right for me?</h2>
 <!-- first question -->
+      <form id="survey">
         1. What makes you the most curious?
         <div class="radio1">
-          <label>
+          <label for="qOne">
+            <select class="form-control" id="qOne">
             <input type="radio" name="qOne" value="2">
             How this website collects data, and what it does with it!
+            </select>
           </label>
         </div>
         <div class="radio1">
-          <label>
+          <label for="qOne">
+            <select class="form-control" id="qOne">
             <input type="radio" name="qOne" value="1">
             How this website was made to look so sleek and beautiful!
+            </select>
           </label>
         </div>
         <div class="radio1">
-          <label>
+          <label for="qOne">
+          <select class="form-control" id="qOne">
             <input type="radio" name="qOne" value="3">
             Neither--I just want to know if there's an app for this website that I can use on my phone!
+          </select>
           </label>
+
         </div>
-
-
-      <form id="form">
+      <br>
+  <!-- second question -->
         <div class="form-group" id=qTwo>
           2. What do you want to do as a programmer?
-          <div class="radio1">
+          <div class="radio2">
             <label>
               <input type="radio" name="qOne" value="1">
               I want to make websites look pretty.
             </label>
           </div>
-          <div class="radio1">
+          <div class="radio2">
             <label>
               <input type="radio" name="qOne" value="2">
               I want to do behind-the-scenes work, such as program databases.
             </label>
           </div>
-          <div class="radio1">
+          <div class="radio2">
             <label>
               <input type="radio" name="qOne" value="3">
               I want to make phone apps so I can sell them and become rich!
             </label>
           </div>
-<!-- second question -->
-          <div class="form-group" id=qTwo>
-            2. How do you like to work?
-            <div class="radio2">
-              <label>
-                <input type="radio" name="qTwo" value="1">
-                In teams! "Teamwork makes the dream work."
-              </label>
-            </div>
-            <div class="radio2">
-              <label>
-                <input type="radio" name="qTwo" value="2">
-                I like to fly solo.
-              </label>
-            </div>
-            <div class="radio2">
-              <label>
-                <input type="radio" name="qTwo" value="3">
-                I am good in teams and working by myself.
-              </label>
-            </div>
+          <br>
 <!-- third question -->
             <div class="form-group" id=qThree>
               3. Do you plan to or are you ok with relocating for your job?
@@ -100,7 +87,7 @@
               <div class="radio3">
                 <label>
                   <input type="radio" name="qThree" value="3">
-                  I plan on relocating after the course to chase the jobs.
+                  I plan on relocating after I graduate to chase the jobs.
                 </label>
               </div>
               <div class="radio3">
@@ -109,6 +96,7 @@
                   I am open to it, but would prefer to stay put.
                 </label>
               </div>
+              <br>
 <!-- fourth question -->
             <div class="form-group" id=qFour>
               4. What is your preferred plaform?
@@ -124,6 +112,7 @@
                   Phones
                 </label>
               </div>
+              <br>
               <!-- <div class="radio4">
                 <label>
                   <input type="radio" name="qFour" value="0">
@@ -132,12 +121,33 @@
               </div> -->
 <!-- fifth question -->
             <div class="form-group" id=qFive>
-
+              <div class="form-group" id=qFive>
+                5. How do you like to work?
+                <div class="radio2">
+                  <label>
+                    <input type="radio" name="qFive" value="1">
+                    In teams! "Teamwork makes the dream work."
+                  </label>
+                </div>
+                <div class="radio2">
+                  <label>
+                    <input type="radio" name="qFive" value="2">
+                    I like to fly solo.
+                  </label>
+                </div>
+                <div class="radio2">
+                  <label>
+                    <input type="radio" name="qFive" value="3">
+                    I am good in teams and working by myself.
+                  </label>
+                </div>
             </div>
       </form>
+      <button type="submit" class ="btn" name="button">Which track is right for me?</button>
       </div>
 
       <div class="results">
+  <!-- first track option -- front-end -->
         <div id="optCD">
           <h2>CSS/Design</h2>
             <p>This CSS course building on the fundamentals from our Introduction to Programming Course. Students who learn CSS will be able to style web pages using complex, responsive layouts, while gaining exposure to the latest CSS tools, tricks, and features used every day by front-end developers and designers.
@@ -152,7 +162,7 @@
               CSS programming is an integral part of front-end development. CSS – along with HTML and JavaScript – helps front-end developers control what the user of a website can see and do.
           </p>
         </div>
-
+<!-- second track option - back-end -->
         <div id="optPD">
           <h2>PHP/Drupal</h2>
             <p>The PHP course builds on the programming fundamentals from our Introduction to Programming course and gives students more difficult problems to solve, a more advanced set of tools to solve them with, and establishes the foundations for learning the real-world technologies used by programmers on the job. Students will have the opportunity to learn PHP programming and build content-focused websites as well as get acquainted with database systems through SQL programming. The outline of topics for this course is as follows:
@@ -167,7 +177,7 @@
               Learning how to code in PHP is vital for aspiring programmers as it is fundamental in the field of web and mobile development.
             </p>
         </div>
-
+<!-- Java/Android -- third track option -->
         <div id="optJA">
           <h2>Java/Android</h2>
           <p>
@@ -180,11 +190,14 @@
               <li>Week 4: Advanced Topics in Java</li>
               <li>Week 5: Group Projects</li>
             </ul>
-
             Through this Java course, students will learn how to code in Java —one of the most widely-used programming languages, used in everything from Android apps to large enterprise development.
           </p>
         </div>
-
+  <!-- "else" default option -->
+        <div id
+        ="workshop">
+          It sounds like you are not completely certain which path is right for you yet. Come to one of our free workshops!
+        </div>
       </div>
 
 
